@@ -16,7 +16,7 @@ import com.zhuolong.admediaplayer.constants.StateConstants;
 import com.zhuolong.admediaplayer.exception.MediaPlayerException;
 import com.zhuolong.admediaplayer.listener.OnPlayControlListener;
 import com.zhuolong.admediaplayer.listener.OnPlayStateChangeListener;
-import com.zhuolong.admediaplayer.model.VideoPlayerHandler;
+import com.zhuolong.admediaplayer.model.handler.VideoPlayerHandler;
 
 import java.io.FileDescriptor;
 import java.io.FileInputStream;

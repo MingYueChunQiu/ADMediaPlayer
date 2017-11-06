@@ -1,4 +1,4 @@
-package com.zhuolong.admediaplayer.model;
+package com.zhuolong.admediaplayer.model.handler;
 
 import android.media.MediaPlayer;
 import android.os.Handler;
