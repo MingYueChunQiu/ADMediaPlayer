@@ -651,7 +651,7 @@ public class VideoPlayerManager {
      * 所以如果传入其他类型资源会直接报运行时异常
      * @param fileDescriptor
      *          传入的文件描述符
-     */
+
     public void setFileDescriptor(FileDescriptor fileDescriptor) throws MediaPlayerException {
         FileInputStream fis = new FileInputStream(fileDescriptor);
         FileChannel fileChannel = fis.getChannel();
@@ -667,7 +667,7 @@ public class VideoPlayerManager {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 
     /**
      * 设置文件描述符
