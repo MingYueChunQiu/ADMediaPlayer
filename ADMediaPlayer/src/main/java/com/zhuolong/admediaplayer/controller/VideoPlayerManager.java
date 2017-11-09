@@ -737,4 +737,15 @@ public class VideoPlayerManager {
         stopPlayer();
         mediaPlayer.seekTo(0);
     }
+
+    /**
+     * 获取视频是否正在播放
+     * @return
+     *          返回判断结果
+     *          true：视频正在播放
+     *          false：视频未播放
+     */
+    public boolean isPlaying(){
+        return mediaPlayer.isPlaying();
+    }
 }
