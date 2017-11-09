@@ -16,7 +16,7 @@ import com.zhuolong.admediaplayer.constants.StateConstants;
 import com.zhuolong.admediaplayer.exception.MediaPlayerException;
 import com.zhuolong.admediaplayer.listener.OnPlayControlListener;
 import com.zhuolong.admediaplayer.listener.OnPlayStateChangeListener;
-import com.zhuolong.admediaplayer.model.VideoPlayerHandler;
+import com.zhuolong.admediaplayer.model.handler.VideoPlayerHandler;
 
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
@@ -651,7 +651,7 @@ public class VideoPlayerManager {
      * 所以如果传入其他类型资源会直接报运行时异常
      * @param fileDescriptor
      *          传入的文件描述符
-     */
+
     public void setFileDescriptor(FileDescriptor fileDescriptor) throws MediaPlayerException {
         FileInputStream fis = new FileInputStream(fileDescriptor);
         FileChannel fileChannel = fis.getChannel();
@@ -667,7 +667,7 @@ public class VideoPlayerManager {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 
     /**
      * 设置文件描述符
@@ -736,5 +736,16 @@ public class VideoPlayerManager {
     private void resetInit(){
         stopPlayer();
         mediaPlayer.seekTo(0);
+    }
+
+    /**
+     * 获取视频是否正在播放
+     * @return
+     *          返回判断结果
+     *          true：视频正在播放
+     *          false：视频未播放
+     */
+    public boolean isPlaying(){
+        return mediaPlayer.isPlaying();
     }
 }
